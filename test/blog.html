@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>blog 1</title>
+    </head>
+    <body>
+        <article class="markdown-body entry-content" itemprop="text">
+            <h1><a id="user-content-从-url-输入到页面展现" class="anchor" href="#从-url-输入到页面展现" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>从 URL 输入到页面展现</h1>
+
+            <h3><a id="user-content-url是什么" class="anchor" href="#url是什么" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URL是什么？</h3>
+
+            <p>统一资源定位符。用于定位互联网上的资源。
+            URL中又包括：
+            1. 协议方案名：http, https, ftp, file 等。 以 <a href="http://www.jirengu.com/app/watch/1327/1?vsum=3&amp;fastVer=1">http://www.jirengu.com/app/watch/1327/1?vsum=3&amp;fastVer=1</a> 举例。 该URL用的是http协议
+            2. 服务器：如 <a href="http://www.jirengu.com">www.jirengu.com</a>
+            3. 端口号：一般默认不设置为80
+            4. 路径：/app/watch/1327/1
+            5. 询问：?vsum=3&amp;fastVer=1</p>
+
+            <h3><a id="user-content-域名解析流程" class="anchor" href="#域名解析流程" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>域名解析流程</h3>
+
+            <ol>
+            <li>浏览器缓存 – 浏览器会缓存DNS记录一段时间</li>
+            <li>系统缓存 - 从 Hosts 文件查找是否有该域名和对应 IP</li>
+            <li>路由器缓存 – 一般路由器也会缓存域名信息。</li>
+            <li>ISP DNS 缓存 – 比如到电信的 DNS 上查找缓存。</li>
+            <li>如果都没有找到，则向根域名服务器查找域名对应 IP，根域名服务器把请求转发到下一级，直到找到 IP
+
+            <ul>
+            <li> 电脑上不了网，为什么修改dns为8.8.8.8 或者114.114.114.114?
+            8.8.8.8是Google公司的DNS服务器。当本地ISP都没有办法找到该域名的对应IP的时候，可以尝试用Google提供的DNS服务器查找域名。国内114.114.114.114是另一个提供DNS服务的服务器。</li>
+            <li> dns 劫持是什么？
+            DNS劫持就是通过劫持了DNS服务器，通过某些手段取得某域名的解析记录控制权，进而修改此域名的解析结果，导致对该域名的访问由原IP地址转入到修改后的指定IP，其结果就是对特定的网址不能访问或访问的是假网址，从而实现窃取资料或者破坏原有正常服务的目的。</li>
+            </ul></li>
+            </ol>
+
+            <h3><a id="user-content-web服务器" class="anchor" href="#web服务器" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web服务器</h3>
+
+            <ul>
+            <li>常见的 web服务器有 Apache、Nginx、IIS、Lighttpd</li>
+            <li>web服务器接收用户的Request 交给网站代码，或者接受请求反向代理到其他 web服务器</li>
+            </ul>
+
+            <p><a href="https://camo.githubusercontent.com/922ecaeb50c447ae6ba60fe569a96b59061963be/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f323439313539372d376562306435626435626438643637612e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" target="_blank"><img src="https://camo.githubusercontent.com/922ecaeb50c447ae6ba60fe569a96b59061963be/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f323439313539372d376562306435626435626438643637612e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" alt="Paste_Image.png" data-canonical-src="http://upload-images.jianshu.io/upload_images/2491597-7eb0d5bd5bd8d67a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;"></a></p>
+
+            <h3><a id="user-content-网站处理流程" class="anchor" href="#网站处理流程" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>网站处理流程</h3>
+
+            <ul>
+            <li>#####MVC 模型(model)-视图(view)-控制器(controller)
+            <a href="https://camo.githubusercontent.com/6ba2d687342ed98fa584b5ca8a5c6fa4f794e5a7/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f323439313539372d616634613464373337323763643862612e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" target="_blank"><img src="https://camo.githubusercontent.com/6ba2d687342ed98fa584b5ca8a5c6fa4f794e5a7/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f323439313539372d616634613464373337323763643862612e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" alt="" data-canonical-src="http://upload-images.jianshu.io/upload_images/2491597-af4a4d73727cd8ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;"></a></li>
+            </ul>
+
+            <h3><a id="user-content-浏览器处理" class="anchor" href="#浏览器处理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>浏览器处理</h3>
+
+            <ol>
+            <li>HTML字符串被浏览器接受后被一句句读取解析</li>
+            <li>解析到link 标签后重新发送请求获取css</li>
+            <li>解析到 script标签后发送请求获取 js，并执行代码</li>
+            <li>解析到img 标签后发送请求获取图片资源</li>
+            </ol>
+
+            <h3><a id="user-content-绘制网页" class="anchor" href="#绘制网页" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>绘制网页</h3>
+
+            <p>浏览器根据 HTML 和 CSS 计算得到渲染树，绘制到屏幕上js 会被执行</p>
+            </article>
+
+    </body>
+</html>
