@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modal</title>
+    <link rel="stylesheet" type="text/css" href="close-iconfont/iconfont.css">
+    <style type="text/css">
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .modal {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal .panel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        .modal .panel header, .modal .panel footer {
+            padding: 1px 16px;
+            background-color: #009688;
+            color: #fff;
+        }
+        .modal .panel .close {
+            float: right;
+            cursor: pointer;
+            line-height: 2.0;
+            padding: 14px;
+            margin-right: -16px;
+        }
+        .modal .panel main {
+            padding: 16px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <div class="modal">
+            <div class="panel">
+                <header>
+                    <span class="close"><i class="iconfont icon-guanbi"></i></span>
+                    <h3>标题</h3>
+                </header>
+                <main>
+                    <p>这是内容</p>
+                    <p>这是内容</p>
+                </main>
+                <footer>
+                    <p>尾部</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

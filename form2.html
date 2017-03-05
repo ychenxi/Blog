@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Questionnaire</title>
+    <style type="text/css">
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .questionnaire {
+           box-shadow:  0 4px 13px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+           padding-bottom: 16px;
+        }
+        .questionnaire>h2 {
+            padding: 16px;
+            background-color: #009688;
+            color: #fff;
+        }
+        .questionnaire form>div {
+            margin: 16px;
+            overflow: auto;
+        }
+        .questionnaire form label {
+            color: #757575;
+        }
+        .questionnaire input[type=text], .questionnaire textarea {
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #808080;
+            width: 100%;
+        }
+        .questionnaire input[type=text]:focus, .questionnaire textarea:focus {
+            outline: none;
+        }
+        .questionnaire .two-columns {
+            width: 50%;
+            float: left;
+            line-height: 1.5;
+        }
+        .questionnaire input[type=submit] {
+            padding: 8px 16px;
+            color: #fff;
+            background-color: #009688;
+            border: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="questionnaire">
+            <h2>信息收集表</h2>
+            <form action="" method="post">
+                <div>
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="qq">QQ</label>
+                    <input type="text" id="qq" name="qq">
+                </div>
+                <div>
+                    <label for="say">要说的话</label>
+                    <textarea name="say" id="say" cols="30" rows="4" autocomplete="off"></textarea>
+                </div>
+                <div>
+                    <div class="two-columns">
+                        <input id="milk" name="drinks" type="checkbox" checked="checked">
+                        <label for="milk">Milk</label>
+                        <br>
+                        <input id="sugar" name="drinks" type="checkbox">
+                        <label for="sugar">Sugar</label>
+                        <br>
+                        <input id="lemon" name="drinks" type="checkbox">
+                        <label for="lemon">Lemon</label>
+                    </div>
+                    <div class="two-columns">
+                        <input id="male" type="radio" name="gender" value="male" checked>
+                        <label for="male">Male</label>
+                        <br>
+                        <input id="female" type="radio" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="提交">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Navigation</title>
+    <link rel="stylesheet" type="text/css" href="close-iconfont/iconfont.css">
+    <style type="text/css">
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: #000;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .nav {
+            background-color: #f1f1f1;
+            box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.14);
+        }
+        .nav>li {
+            float: left;
+            position: relative;
+        }
+        .nav:after {
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .nav>li a {
+            display: block;
+            padding: 8px 16px;
+        }
+        .nav>li a:hover {
+            background-color: #ccc;
+        }
+        .nav .children {
+            display: none;
+            position:absolute;
+            left: 0;
+            top: 100%;
+            width: 160px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.14);
+        }
+        .nav>li:hover .children {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li>
+                <a href="#">作品</a>
+                 <div class="children">
+                    <a href="#">alert</a>
+                    <a href="#">nav-demo</a>
+                    <a href="#">modal-demo</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">更多</a>
+                <div class="children">
+                    <a href="#">GitHub</a>
+                    <a href="#">博客</a>
+                    <a href="#">知乎</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
