@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Holy Grail Layout</title>
+    <style type="text/css">
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        body {
+            min-width: 500px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #656565;
+        }
+        .container {
+            padding-left: 100px;
+            height: 100%;
+        }
+        header {
+            height: 80px;
+            background-color: #333;
+            color: #fff;
+        }
+        .logo img {
+            height: 100%;
+            padding: 10px; 
+        }
+        main {
+            margin: 0 200px 0 100px;
+        }
+        section{
+            float: left;
+            padding: 20px;
+            height: 600px;
+            background-color: aqua;
+            width: 100%;
+            /*padding-left: 100px;
+            padding-right: 200px;*/
+
+        }
+        .aside1 {
+            position: relative;
+            left: -100px;
+            width: 100px;
+            height: 700px;
+            background: pink;
+            float: left;
+            margin-left: -100%;
+        }
+        .aside2 {
+            position: relative;
+            left: 200px;
+            width: 200px;
+            height: 400px;
+            background:greenyellow;
+            float: left;
+            margin-left: -200px;
+        }
+        main:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        footer {
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="http://jirengu.com/data/upload/2017/0118/17/587f39fba695a.png" alt="jirengu">
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h1>My Portfolio</h1>
+            <p>Life is Wonderful</p>
+            <p>Good Mood</p>
+            <p>Beautiful Code</p>
+        </section>
+        <aside class="aside1"></aside>
+        <aside class="aside2"></aside>
+    </main>
+
+
+    <footer>
+        <div class="container">footer
+        </div>
+    </footer>
+</body>
+</html>

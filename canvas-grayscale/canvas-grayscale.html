@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grayscale</title>
+</head>
+<body>
+    <canvas id="canvas" width="560" height="550"></canvas>
+    <button id="make-gray">Make it Gray</button>
+    <button id="make-back">Make it Back</button>
+    <script type="text/javascript">
+        // var xhr = new XMLHttpRequest();
+        // xhr.open('get', '/img', true);
+        // xhr.send();
+        // xhr.onreadystatechange = function(){
+        // if(xhr.readyState === 4 && xhr.status === 200 ){
+        //     xhr.responseText;
+        //     console.log(xhr.responseText)
+        //     }
+        // }
+        var mg = document.querySelector("#make\-gray");
+        var mb = document.querySelector("#make\-back");
+        var canvas = document.querySelector("canvas");
+        var ctx = canvas.getContext("2d");
+
+        var image = new Image();
+        var originalImageData;
+        image.onload = function(){
+            ctx.drawImage(image, 0, 0);
+            originalImageData = ctx.getImageData(0,0,560,550);
+        }
+
+        image.src = "http://localhost:8888/img";
+
+        mg.addEventListener('click', function(e){
+            makeGrayScale();
+        })
+        
+        mb.addEventListener('click', function(e){
+            ctx.putImageData(originalImageData, 0, 0);
+        })
+
+        var makePixelGrayScale = function (r, g, b, a) {
+            var y = (0.3 * r) + (0.59 * g) + (0.11 * b);
+            return {r:y, g:y, b:y, a:0.85*a};
+        }
+        function makeGrayScale() {
+            var r, g, b, a;
+            var imageData = ctx.getImageData(0,0,560,550);
+            var numPixels = imageData.data.length/4;
+            for (var i = 0; i < numPixels; i++) {
+                r = imageData.data[i * 4 + 0];
+                g = imageData.data[i * 4 + 1];
+                b = imageData.data[i * 4 + 2];
+                a = imageData.data[i * 4 + 3];
+                var pixel = makePixelGrayScale(r, g, b, a);
+                imageData.data[i * 4 + 0] = pixel.r;
+                imageData.data[i * 4 + 1] = pixel.g;
+                imageData.data[i * 4 + 2] = pixel.b;
+                imageData.data[i * 4 + 3] = pixel.a;
+            }
+            ctx.putImageData(imageData, 0, 0);
+        }
+    </script>
+
+</body>
+</html>

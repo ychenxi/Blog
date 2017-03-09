@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>three columns</title>
+    <style type="text/css">
+        body {
+            min-width: 500px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #656565;
+        }
+        .container {
+            padding-left: 100px;
+        }
+        header {
+            height: 57px;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .logo img {
+            height: 60px;
+        }
+        section{
+            padding: 10px;
+            height: 600px;
+            background-color: aqua;
+            margin-left: 100px;
+            margin-right: 200px;
+
+        }
+        .aside1 {
+            width: 100px;
+            height: 700px;
+            background: pink;
+            float: left;
+        }
+        .aside2 {
+            width: 200px;
+            height: 400px;
+            background:greenyellow;
+            float: right;
+        }
+        main:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        footer {
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="http://jirengu.com/data/upload/2017/0118/17/587f39fba695a.png" alt="jirengu">
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        <aside class="aside1"></aside>
+        <aside class="aside2"></aside>
+        <section>
+            <h1>My Portfolio</h1>
+            <p>Life is Wonderful</p>
+            <p>Good Mood</p>
+            <p>Beautiful Code</p>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">footer
+        </div>
+    </footer>
+</body>
+</html>
