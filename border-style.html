@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Border Style</title>
+     <style type="text/css">
+        .rectangle {
+            position: relative;
+            width: 300px;
+            height: 130px;
+            border: 1px solid #888;
+            margin-top: 30px;
+        }
+        .arrow-up:before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: -20px;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid #888;
+        }
+        .arrow-up-right-outer:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 270px;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-top: 30px solid #888;
+        }
+        .arrow-up-right-inner:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 271px;
+            width: 0;
+            height: 0;
+            border-left: 29px solid transparent;
+            border-top: 29px solid red;
+        }
+        .arrow-up-outer:before {
+            content: "";
+            position: absolute;
+            top: -14.2px;
+            left: 17px;
+            width: 26.16px;
+            height: 26.16px;
+            border-left: 1px solid #888;
+            border-top: 1px solid #888;
+            transform: rotate(45deg);
+            background: #fff;
+        }
+     </style>
+</head>
+<body>
+    <div class="arrow-up rectangle"></div>
+    <div class="arrow-up-right-outer arrow-up-right-inner rectangle"></div>
+    <div class="arrow-up-outer arrow-up-inner rectangle"></div>
+</body>
+</html>
