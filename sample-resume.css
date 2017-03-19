@@ -93,6 +93,7 @@ h2 {
     font-size: 1.33rem;
     font-weight: bold;
     margin: 0 2px;
+    min-width: 200px;
 }
 .personal-info .contacts {
     float: right;
