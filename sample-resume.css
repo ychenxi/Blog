@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #e0e0e0;
+
+}
+li {
+    list-style: none;
+}
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1024px;
+    min-width: 902px;
+    margin: 10px auto;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 77px 0 50px 50px;
+    
+}
+.personal-info {
+    height: 162px;
+    margin-bottom: 55px;
+}
+.personal-info .logo {
+    position: relative;
+    float: left;
+    width: 162px;
+    height: 162px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.personal-info .logo:before {
+    content: '';
+    position: absolute;
+    top: 81px;
+    left: 31px;
+    display: inline-block;
+    width: 100px;
+    border-top: 2px solid #fff;
+    transform: rotateZ(140deg);
+}
+.personal-info .logo span {
+    font-size: 2rem;
+    line-height: 1;
+}
+.personal-info .logo span:nth-child(1) {
+    position: absolute;
+    top: 46px;
+    left: 42px;
+}
+.personal-info .logo span:nth-child(2) {
+    position: absolute;
+    top:92.2px;
+    left: 102px;
+}
+.personal-info .name {
+    float: left;
+    margin-left: 52px;
+    height: 100%;
+}
+.personal-info .name:before,
+.personal-info .contacts:before
+{
+  content:"" ;
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.317rem; /* Adjusts for spacing */
+}
+.personal-info .name>h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    line-height:1.4;
+
+}
+.personal-info .name .title {
+    font-size: 1.33rem;
+    font-weight: bold;
+    margin: 0 2px;
+}
+.personal-info .contacts {
+    float: right;
+    height: 100%;
+    width: 36%;
+}
+.personal-info .contacts ul {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.personal-info .contacts h2 {
+   border-bottom: 4px solid #000;
+   margin-bottom: 10px;
+}
+.personal-info .contacts strong {
+    margin-right: 10px;
+}
+section {
+    padding-right: 76px;
+}
+section h2 {
+    margin-bottom: 30px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ccc;
+    width: 45%;
+}
+section ul>li {
+    position: relative;
+    margin: 0 0 30px 85px;
+
+}
+section h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+.work-experience {
+    padding-top: 50px;
+}
+.work-experience ul,
+.education ul {
+    margin-left: 1.0%;
+    border-left: 1px solid #333;
+}
+.work-experience li,
+.education li {
+    
+    top: -8.5px;
+}
+.work-experience li:before,
+.education li:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    top: 8.5px; 
+    left: -92px;
+
+}
+
+
+.light-color {
+    color: #ccc;
+}
+.education .major {
+    margin-top: -10px;
+}
+.activities {
+    width: 45%;
+}
+.activities {
+    float: left;
+}
+.skills {
+    float: left;
+    width: 40%;
+}
+.activities h2,
+.skills h2 {
+    width: 100%;
+}
+.activities li:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #333;
+    top: 4px; 
+    left: -85px;
+}
+.activities li:after {
+    content: '+';
+    position: absolute;
+    top: 2px; 
+    left: -79px;
+}
+.skills li:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #333;
+    top: 4px; 
+    left: -1px;
+}
+.skills li:after {
+    content: '+';
+    position: absolute;
+    top: 2px; 
+    left: 4.5px;
+}
+.skills li {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding-left: 45px;
+}
+header:after,
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
