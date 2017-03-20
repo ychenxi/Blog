@@ -1,0 +1,50 @@
+body {
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color: #87968e;
+    background: #fff2e3;
+    text-align: center
+}
+ul {
+   margin: 0;
+   padding: 0; 
+}
+a {
+    text-decoration: none;
+}
+.layout {
+    width: 800px;
+    margin: 30px auto 0 auto;
+}
+header h1 {
+    font-size: 42px;
+}
+header .intro {
+    opacity: 0.6;
+}
+.nav-btns {
+    margin-top: 30px;
+}
+.nav-btns>li {
+    display: inline-block;
+}
+.active {
+    opacity: 0.6;
+}
+.btn {
+    display: inline-block;
+    margin: 3px;
+    padding: 6px 14px;
+    border-radius: 2px;
+    background: #72b890;
+    color: #fff;
+}
+.content .btns {
+    margin-top: 30px;
+}
+ 
+footer a {
+    color: #72b890;
+}
+
+
