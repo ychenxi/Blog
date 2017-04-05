@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+ul,li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+::-moz-selection {
+  background: rgba(255, 160, 122, 0.5);;
+}
+
+::selection {
+  background: rgba(255, 160, 122, 0.5);
+}
+ul:after,
+li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(
+      rgba(26,26,26,.4), 
+      rgba(26,26,26,.4)
+    ),url('img/kitten.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    line-height: 1.4;
+}
+.header-content {
+    padding-top: 300px;
+    padding-bottom: 200px;
+}
+.header-content .sub-title {
+    font-family: 'Droid Serif','Times New Roman',Times,serif;
+    font-size: 3rem;
+    font-style: italic;
+    /*letter-spacing: 0.1em;*/
+}
+
+.header-content .main-title {
+    font-family: 'Montserrat';
+    font-size: 5.35rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    
+    background-color: #FFA07A;
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 22px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none; 
+}
+header .btn {
+    border-radius: 40px;
+}
+.contact .btn {
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 160, 122, 0.3);
+}
+
+.btn:active {
+    background-color: rgba(255, 160, 122, 0.5);
+}
+.btn-color:hover {
+    color: rgb(255, 160, 122);
+}
+section {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+}
+section h2 {
+    font-family: 'Montserrat';
+    font-size: 2.86rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:0px;
+}
+section h3 {
+    font-family: 'Montserrat';
+    font-size: 1.286rem;
+    font-weight: bold;
+    margin:0px;
+}
+section p {
+    font-size: 16px;
+    font-family: 'Droid Serif','Times New Roman',Times,serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    color: #777;    
+}
+.services li p {
+    margin-top: 10px;
+}
+.services img {
+    border-radius: 50%;
+}
+
+.adoption .image {
+    width: 360px;
+    height: 260px;
+    margin-bottom: 10px;
+}
+.adoption .image img {
+    width: 100%;
+    height: auto;
+}
+.adoption li p {
+    margin-bottom: 43px;
+}
+.about ul {
+    position: relative;
+}
+.about ul:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    background-color: #f1f1f1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+.about .image {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -86.5px
+
+}
+.about .image img {
+    width: 100%;
+    height: auto;
+    border-radius:50%;
+}
+.about .image h3 {
+    color: #fff;
+    position: absolute;
+    font-family: 'Montserrat';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.286rem;
+    font-weight: bold;
+    margin: 0;
+    width:60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about .letters {
+    position: relative;
+    background-color: #FFA07A;
+}
+.about .left-panel {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding-right: 115px;
+    text-align: right;
+    margin-bottom: 50px;
+}
+.about .right-panel {
+    box-sizing: border-box;
+    float: right;
+    width: 50%;
+    padding-left: 115px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.team,
+.adoption {
+    background-color: #f7f7f7;
+}
+.team .image {
+    width: 225px;
+    height: 225px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    margin: 60px auto 20px auto;
+}
+.team img {
+    width: 100%;
+    height: auto;
+    border-radius:50%;
+}
+.team p {
+    margin-bottom: 0;
+}
+.social-buttons {
+    width: 150px;
+    margin: 0 auto;
+}
+.social-buttons>li>a {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    color: #222;
+}
+.contact {
+    background: linear-gradient(
+      rgba(26,26,26,.4), 
+      rgba(26,26,26,.4)
+    ),url('img/kitten.jpg');
+    background-position: bottom;
+    color: white;
+}
+.form-area:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact .left-area,
+.contact .right-area {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+.contact .right-area {
+    height: auto;
+}
+.contact .form {
+    display: block;
+    padding: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+
+}
+.contact .personal-info {
+    margin-bottom: 25px;
+}
+input,
+textarea {
+    outline-color: #FFA07A;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.three-columns>li {
+    float: left;
+    width: 33.33%;
+}
+.two-columns>li {
+    float: left;
+    width: 50%;
+}
+footer {
+    font-family: 'Montserrat';
+    padding: 25px 0;
+}
+footer .terms-of-use li {
+    display: inline-block;
+    padding: 0 5px;
+}
+footer .terms-of-use a {
+    color: #FFA07A;
+}
+footer .copy-right,
+footer .terms-of-use  {
+    line-height: 3.45;
+    display: table;
+    margin: auto;
+}
+
