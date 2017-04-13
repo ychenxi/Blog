@@ -1,0 +1,37 @@
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<div class="suggestion">
+    <div><input type="text"> </div>
+    <div>
+        <ul class="alt">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    //change 不行.失去焦点之后。
+    //keypress 不会等 keyup才触发
+    //按时间顺序： keydown, keypress, keyup
+    //keyup无法监听鼠标变动。
+   
+
+    // $('input').on('keyup mousedown', function(){
+
+    // }) 无法用paste
+
+    $('input').on('input', function(){
+        console.log(this.value);
+    })
+    //对于中文有bug。先捕获的是英文。
+    //compositionstart， compositionend,
+    $('input').on('compositionend', function(){
+        console.log(this.value);
+    })
+</script>
+
+
+
+
+
